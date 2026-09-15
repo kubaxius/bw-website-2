@@ -7,7 +7,7 @@ export default defineConfig({
   integrations: [
     astroI18n({
       locales: ["en", "pl"],
-      defaultLocale: "en",
+      defaultLocale: "pl",
       translations: {
         directory: "src/i18n/translations",
         onMissing: "fallback",
