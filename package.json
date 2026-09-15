@@ -12,6 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@kubaxius/astro-i18n-mini": "file:kubaxius-astro-i18n-mini-0.1.0.tgz",
     "astro": "^7.3.2"
   },
   "allowScripts": {

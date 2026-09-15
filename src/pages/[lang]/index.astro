@@ -1,0 +1,24 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import {
+  getCurrentLocale,
+  getStaticLocalePaths,
+  getTranslation,
+} from "@kubaxius/astro-i18n-mini/runtime";
+
+export const getStaticPaths = getStaticLocalePaths;
+
+const locale = getCurrentLocale(Astro.currentLocale ?? Astro.params.lang);
+const t = getTranslation({ source: Astro.url, locale });
+---
+
+<Layout>
+<html lang={locale}>
+  <body>
+    <h1>{t.heading}</h1>
+    <p>{t.intro.message}</p>
+    <p>ZAŻÓŁĆ GĘŚLĄ jaźń</p>
+  </body>
+</html>
+</Layout>
