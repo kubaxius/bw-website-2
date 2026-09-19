@@ -14,6 +14,7 @@ concurrency:
 
 jobs:
   release:
+    environment: artifact-release
     runs-on: ubuntu-latest
     steps:
       - name: Check out the tagged commit
